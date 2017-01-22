@@ -1,0 +1,11 @@
+*.log
+*.sty
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.ttc
+*~

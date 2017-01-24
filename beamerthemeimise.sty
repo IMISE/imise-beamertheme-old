@@ -4,11 +4,13 @@
 \usepackage[export]{adjustbox}
 \usepackage{xcolor}
 
-\usepackage{fontspec}
-\setmainfont{futura.ttc}
+\usepackage[quiet]{fontspec}
 
 \mode<presentation>
+\usepackage{amssymb}
 \usepackage{tikz}
+
+\setsansfont{Futura Book}
 
 \setbeamertemplate{navigation symbols}{}
 
@@ -21,11 +23,12 @@
 \setbeamertemplate{section in toc}{\color{imiseblue}\inserttocsection}
 \setbeamercolor{local structure}{fg=imiseblue}
 
-\setbeamertemplate{frametitle}[default][left] 
+
 \let\origframetitle=\frametitle
 \renewcommand\frametitle[1]{\origframetitle
 {
-\begin{tikzpicture}[remember picture,overlay]  
+\setbeamertemplate{frametitle}[default][left] 
+\begin{tikzpicture}[remember picture,overlay] 
     \node [anchor=north east,xshift=0.4em,yshift=0.4em] at (current page.north east) % for unknown reasons, the x and y shift is necessary and different for each aspect ratio 
       {\includegraphics[width=0.35\textwidth,right]{img/unileipzig.pdf}};
   \end{tikzpicture}
@@ -50,7 +53,7 @@
 \usebeamerfont{author}\insertauthor\par
   \usebeamerfont{date}\insertdate\par
 ~\\~\\~\\~\\
-{\normalsize imise \hspace{-0.3em}\huge\color{orange}.}\\
+{\normalsize imise \hspace{-0.3em}\tiny\color{orange}~\scalebox{.4}{$\blacksquare$}}\\
  Institut für Medizinische Informatik, Statistik und Epidemiologie\\~\\
   \end{beamercolorbox}%
 }

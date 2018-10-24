@@ -1,4 +1,5 @@
-IMISE corporate design LaTeX beamer template, made in 2017 by Konrad Höffner with help from Stefan Faulhaber.
+Old IMISE corporate design LaTeX beamer template, made in 2017 by Konrad Höffner with help from Stefan Faulhaber.
+The new template that does not require Futura can found at https://github.com/IMISE/imise-beamertheme.
 
 Needs to be compiled with `xelatex`.
 
